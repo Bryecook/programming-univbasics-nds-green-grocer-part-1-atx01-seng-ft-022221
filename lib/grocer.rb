@@ -7,7 +7,7 @@ def find_item_by_name_in_collection(name, collection)
       if value==name
         return name
       elsif
-      return nil
+      nil
     end
   end 
   end
