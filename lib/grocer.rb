@@ -3,9 +3,13 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   collection.each do |key, value|
-    if value == name
-      return name
+    if key==:item
+      if value==name
+        return name
+      elsif
+      return nil
     end
+  end 
   end
 end
 
