@@ -3,15 +3,12 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
-  collection.each do |key, value|
-    if key==:item
-      value.each do |food|
-        if name==food[:item]
-        return name[:item]
+  collection.each do |items|
+    if items[:item]== name
+      return items
     end
   end 
-end
-end
+nil
 end
 
 def consolidate_cart(cart)
