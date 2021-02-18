@@ -21,7 +21,6 @@ def consolidate_cart(cart)
   consolidated_cart=[]
   cart.each do |cart_item|
     item_name=cart_item[:item]
-    binding.pry
     item_info=find_item_by_name_in_collection(item_name, consolidated_cart)
     if item_info
       item_info[:count] +=1 
