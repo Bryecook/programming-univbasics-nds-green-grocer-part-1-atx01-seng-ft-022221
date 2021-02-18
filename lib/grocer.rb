@@ -22,8 +22,7 @@ def consolidate_cart(cart)
   cart.each do |array|
     array.each do |item, attribute|
       consolidated_cart[item] ||=attribute
-      consolidated_cart[item][:count] ? consolidated_cart[item][:count]+=1 : 
-      consolidated_cart[item][:count]=1 
+      consolidated_cart[item][:count] ? consolidated_cart[item][:count]+=1
     end
   end
   consolidated_cart
