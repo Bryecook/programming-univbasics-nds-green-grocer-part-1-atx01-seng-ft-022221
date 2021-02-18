@@ -25,6 +25,7 @@ def consolidate_cart(cart)
       consolidated_cart[item][:count] ? consolidated_cart[item][:count]+=1
     end
   end
+  end
   consolidated_cart
 end
 
