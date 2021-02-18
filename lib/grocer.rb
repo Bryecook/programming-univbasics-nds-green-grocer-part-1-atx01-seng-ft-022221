@@ -7,7 +7,7 @@ def find_item_by_name_in_collection(name, collection)
     if key==:item
       value.each do |food|
         if name==food[:item]
-        return name
+        return collection[:item]
     end
   end 
 end
